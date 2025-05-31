@@ -15,7 +15,7 @@ const RegisterSection = () => {
       setEmail('');
     }
   };
-  return <section className="px-6 bg-background py-[189px]">
+  return <section className="px-6 bg-background py-[240px]">
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-12">
           <h2 className="font-playfair text-4xl text-foreground mb-6 py-px mx-0 md:text-5xl font-bold">
