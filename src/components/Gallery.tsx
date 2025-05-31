@@ -9,7 +9,7 @@ const Gallery = () => {
         {/* Bento Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-[600px]">
           <div className="col-span-2 row-span-2">
-            <img src={images[0]} alt="Gallery image 1" className="w-full h-full object-contain" />
+            <img src={images[0]} alt="Gallery image 1" className="w-full h-full object-cover" />
           </div>
           <div className="col-span-2 md:col-span-1">
             <img src={images[1]} alt="Gallery image 2" className="w-full h-full object-cover" />
