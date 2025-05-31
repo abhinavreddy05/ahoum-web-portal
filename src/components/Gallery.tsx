@@ -1,3 +1,4 @@
+
 const Gallery = () => {
   const images = [
     "/lovable-uploads/549c7b3d-e50d-4c94-8522-82e94c9c602e.png",
@@ -14,7 +15,7 @@ const Gallery = () => {
         </h2>
         
         {/* Bento Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-[600px]">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-[400px] md:h-[500px]">
           <div className="col-span-2 row-span-2">
             <img 
               src={images[0]} 
