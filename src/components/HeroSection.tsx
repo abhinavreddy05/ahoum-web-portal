@@ -11,7 +11,7 @@ const HeroSection = () => {
       description: "Discover ancient wisdom through modern technology"
     },
     {
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=2000&q=80",
+      image: "/lovable-uploads/341cf9a2-3b37-4817-b33c-3e7fdb5589f0.png",
       title: "Your co-pilot for emotional clarity",
       description: "Navigate your spiritual journey with AI-powered insights"
     }
