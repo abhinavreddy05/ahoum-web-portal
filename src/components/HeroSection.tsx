@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 
 const HeroSection = () => {
@@ -19,21 +20,21 @@ const HeroSection = () => {
     return () => clearInterval(timer);
   }, []);
 
-  return <section className="relative h-screen overflow-hidden">
+  return <section className="relative h-screen min-h-[600px] overflow-hidden">
       <div className="flex transition-transform duration-500 ease-in-out h-full" style={{
       transform: `translateX(-${currentSlide * 100}%)`
     }}>
         {slides.map((slide, index) => <div key={index} className="min-w-full h-full relative">
             <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-              <div className="text-center text-white px-6">
-                <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-4 text-center">
+            <div className="absolute inset-0 bg-black/20 flex items-center justify-center p-4">
+              <div className="text-center text-white max-w-4xl">
+                <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-center">
                   {slide.title}
                 </h1>
-                <p className="font-montserrat text-lg md:text-xl mb-8 max-w-2xl text-center">
+                <p className="font-montserrat text-base sm:text-lg md:text-xl mb-6 md:mb-8 max-w-2xl mx-auto text-center">
                   {slide.description}
                 </p>
-                <button className="font-montserrat border-2 border-white text-white px-8 py-3 rounded-[20px] hover:bg-white hover:text-foreground transition-all duration-300">
+                <button className="font-montserrat border-2 border-white text-white px-6 md:px-8 py-2 md:py-3 text-sm md:text-base rounded-[20px] hover:bg-white hover:text-foreground transition-all duration-300">
                   Learn more
                 </button>
               </div>
@@ -42,8 +43,8 @@ const HeroSection = () => {
       </div>
       
       {/* Slide indicators */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {slides.map((_, index) => <button key={index} onClick={() => setCurrentSlide(index)} className={`w-3 h-3 rounded-full transition-all ${currentSlide === index ? 'bg-white' : 'bg-white/50'}`} />)}
+      <div className="absolute bottom-4 md:bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        {slides.map((_, index) => <button key={index} onClick={() => setCurrentSlide(index)} className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all ${currentSlide === index ? 'bg-white' : 'bg-white/50'}`} />)}
       </div>
     </section>;
 };
