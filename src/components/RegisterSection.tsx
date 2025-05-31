@@ -18,7 +18,7 @@ const RegisterSection = () => {
   };
 
   return (
-    <div className="px-4 md:px-6 lg:px-8 bg-background py-24 md:py-32 lg:py-40">
+    <div className="w-full py-20 md:py-24 lg:py-28 px-4 md:px-6 lg:px-8 bg-background mt-8 md:mt-12 lg:mt-16">
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-12 md:mb-16">
           <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl text-foreground mb-6 md:mb-8 font-bold">
