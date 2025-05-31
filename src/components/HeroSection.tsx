@@ -20,11 +20,13 @@ const HeroSection = () => {
     return () => clearInterval(timer);
   }, []);
 
-  return <section className="relative h-screen min-h-[600px] overflow-hidden">
+  return (
+    <div className="relative h-screen min-h-[600px] overflow-hidden">
       <div className="flex transition-transform duration-500 ease-in-out h-full" style={{
-      transform: `translateX(-${currentSlide * 100}%)`
-    }}>
-        {slides.map((slide, index) => <div key={index} className="min-w-full h-full relative">
+        transform: `translateX(-${currentSlide * 100}%)`
+      }}>
+        {slides.map((slide, index) => (
+          <div key={index} className="min-w-full h-full relative">
             <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/20 flex items-center justify-center p-4">
               <div className="text-center text-white max-w-4xl">
@@ -39,14 +41,22 @@ const HeroSection = () => {
                 </button>
               </div>
             </div>
-          </div>)}
+          </div>
+        ))}
       </div>
       
       {/* Slide indicators */}
       <div className="absolute bottom-4 md:bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        {slides.map((_, index) => <button key={index} onClick={() => setCurrentSlide(index)} className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all ${currentSlide === index ? 'bg-white' : 'bg-white/50'}`} />)}
+        {slides.map((_, index) => (
+          <button 
+            key={index} 
+            onClick={() => setCurrentSlide(index)} 
+            className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all ${currentSlide === index ? 'bg-white' : 'bg-white/50'}`} 
+          />
+        ))}
       </div>
-    </section>;
+    </div>
+  );
 };
 
 export default HeroSection;
