@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [{
-    image: "/lovable-uploads/08200286-e260-4c14-8f4c-1147617b4e59.png",
+    image: "/lovable-uploads/8d434cb9-b643-4b30-a21a-404ab5eaa46c.png",
     title: "Neosophical AI",
     description: "Discover ancient wisdom through modern technology"
   }, {
@@ -29,14 +29,14 @@ const HeroSection = () => {
           <div key={index} className="min-w-full h-full relative">
             <img src={slide.image} alt={slide.title} className="w-full h-full object-cover object-center" />
             <div className="absolute inset-0 bg-black/20 flex items-center justify-center p-4 md:p-6">
-              <div className="text-center text-white max-w-4xl">
-                <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 text-center leading-tight">
+              <div className="text-center max-w-4xl">
+                <h1 className={`font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 text-center leading-tight ${index === 0 ? 'text-black' : 'text-white'}`}>
                   {slide.title}
                 </h1>
-                <p className="font-montserrat text-base sm:text-lg md:text-xl lg:text-2xl mb-8 md:mb-10 max-w-3xl mx-auto text-center leading-relaxed">
+                <p className={`font-montserrat text-base sm:text-lg md:text-xl lg:text-2xl mb-8 md:mb-10 max-w-3xl mx-auto text-center leading-relaxed ${index === 0 ? 'text-black' : 'text-white'}`}>
                   {slide.description}
                 </p>
-                <button className="font-montserrat border-2 border-white text-white px-8 md:px-10 py-3 md:py-4 text-sm md:text-base lg:text-lg rounded-[20px] hover:bg-white hover:text-foreground transition-all duration-300 font-medium">
+                <button className={`font-montserrat border-2 px-8 md:px-10 py-3 md:py-4 text-sm md:text-base lg:text-lg rounded-[20px] transition-all duration-300 font-medium ${index === 0 ? 'border-black text-black hover:bg-black hover:text-white' : 'border-white text-white hover:bg-white hover:text-foreground'}`}>
                   Learn more
                 </button>
               </div>
