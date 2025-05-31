@@ -29,7 +29,7 @@ const RegisterSection = () => {
         {/* Email Registration */}
         <form onSubmit={handleRegister} className="mb-12">
           <div className="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
-            <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Enter your email" className="flex-1 px-6 py-3 border-2 border-foreground bg-transparent font-montserrat text-foreground placeholder:text-foreground/50 focus:outline-none focus:ring-0" required />
+            <input type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Enter your email" required className="flex-1 px-6 py-3 border-2 border-foreground bg-transparent font-montserrat text-foreground placeholder:text-foreground/50 focus:outline-none focus:ring-0 rounded-2xl" />
             <button type="submit" className="font-montserrat border-2 border-foreground text-foreground px-8 py-3 rounded-[20px] hover:bg-foreground hover:text-background transition-all duration-300">
               Register
             </button>
