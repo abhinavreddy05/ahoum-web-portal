@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [{
-    image: "/lovable-uploads/32114bbe-1eb7-4043-985f-562d4ef99af6.png",
+    image: "/lovable-uploads/08200286-e260-4c14-8f4c-1147617b4e59.png",
     title: "Neosophical AI",
     description: "Discover ancient wisdom through modern technology"
   }, {
