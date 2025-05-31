@@ -30,13 +30,13 @@ const HeroSection = () => {
             <img src={slide.image} alt={slide.title} className="w-full h-full object-cover object-center" />
             <div className="absolute inset-0 bg-black/20 flex items-center justify-center p-4 md:p-6">
               <div className="text-center max-w-4xl">
-                <h1 className={`font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 text-center leading-tight ${index === 0 ? 'text-black' : 'text-white'}`}>
+                <h1 className={`font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 text-center leading-tight ${index === 0 ? 'text-white' : 'text-white'}`}>
                   {slide.title}
                 </h1>
-                <p className={`font-montserrat text-base sm:text-lg md:text-xl lg:text-2xl mb-8 md:mb-10 max-w-3xl mx-auto text-center leading-relaxed ${index === 0 ? 'text-black' : 'text-white'}`}>
+                <p className={`font-montserrat text-base sm:text-lg md:text-xl lg:text-2xl mb-8 md:mb-10 max-w-3xl mx-auto text-center leading-relaxed ${index === 0 ? 'text-white' : 'text-white'}`}>
                   {slide.description}
                 </p>
-                <button className={`font-montserrat border-2 px-8 md:px-10 py-3 md:py-4 text-sm md:text-base lg:text-lg rounded-[20px] transition-all duration-300 font-medium ${index === 0 ? 'border-black text-black hover:bg-black hover:text-white' : 'border-white text-white hover:bg-white hover:text-foreground'}`}>
+                <button className={`font-montserrat border-2 px-8 md:px-10 py-3 md:py-4 text-sm md:text-base lg:text-lg rounded-[20px] transition-all duration-300 font-medium ${index === 0 ? 'border-white text-white hover:bg-white hover:text-foreground' : 'border-white text-white hover:bg-white hover:text-foreground'}`}>
                   Learn more
                 </button>
               </div>
