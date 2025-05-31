@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
+
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [{
-    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=2000&q=80",
+    image: "/lovable-uploads/12a9cf17-b71b-4057-b03e-13acb8de343f.png",
     title: "Neosophical AI",
     description: "Discover ancient wisdom through modern technology"
   }, {
@@ -10,12 +11,14 @@ const HeroSection = () => {
     title: "Your co-pilot for emotional clarity",
     description: "Navigate your spiritual journey with AI-powered insights"
   }];
+
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide(prev => (prev + 1) % slides.length);
     }, 5000);
     return () => clearInterval(timer);
   }, []);
+
   return <section className="relative h-screen overflow-hidden">
       <div className="flex transition-transform duration-500 ease-in-out h-full" style={{
       transform: `translateX(-${currentSlide * 100}%)`
@@ -44,4 +47,5 @@ const HeroSection = () => {
       </div>
     </section>;
 };
+
 export default HeroSection;
