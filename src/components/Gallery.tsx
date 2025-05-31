@@ -1,10 +1,9 @@
-
 const Gallery = () => {
   const images = [
-    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80"
+    "/lovable-uploads/549c7b3d-e50d-4c94-8522-82e94c9c602e.png",
+    "/lovable-uploads/bd17d909-ef29-4d02-bbc6-a4ec9630f435.png",
+    "/lovable-uploads/b5d4de2e-03a5-46f6-9191-8f99e97bc7d8.png",
+    "/lovable-uploads/72acec9f-e007-4d31-987e-e52fdb8add90.png"
   ];
 
   return (
