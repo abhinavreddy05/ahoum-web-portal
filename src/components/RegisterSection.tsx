@@ -20,8 +20,8 @@ const RegisterSection = () => {
   return (
     <div className="w-full py-20 md:py-24 lg:py-28 px-4 md:px-6 lg:px-8 bg-background mt-8 md:mt-12 lg:mt-16">
       <div className="max-w-4xl mx-auto text-center">
-        <div className="mb-12 md:mb-16">
-          <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl text-foreground mb-6 md:mb-8 font-bold">
+        <div className="mb-8 md:mb-10">
+          <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl text-foreground mb-4 md:mb-5 font-bold">
             Coming Soon
           </h2>
           <p className="font-montserrat text-base md:text-lg lg:text-xl text-foreground/80 max-w-2xl mx-auto leading-relaxed">
@@ -30,7 +30,7 @@ const RegisterSection = () => {
         </div>
 
         {/* Email Registration */}
-        <form onSubmit={handleRegister} className="mb-12 md:mb-16">
+        <form onSubmit={handleRegister} className="mb-8 md:mb-10">
           <div className="flex flex-col sm:flex-row gap-4 md:gap-6 max-w-lg mx-auto">
             <input 
               type="email" 

@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [{
-    image: "/lovable-uploads/12a9cf17-b71b-4057-b03e-13acb8de343f.png",
+    image: "/lovable-uploads/32114bbe-1eb7-4043-985f-562d4ef99af6.png",
     title: "Neosophical AI",
     description: "Discover ancient wisdom through modern technology"
   }, {
@@ -27,7 +27,7 @@ const HeroSection = () => {
       }}>
         {slides.map((slide, index) => (
           <div key={index} className="min-w-full h-full relative">
-            <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" />
+            <img src={slide.image} alt={slide.title} className="w-full h-full object-cover object-center" />
             <div className="absolute inset-0 bg-black/20 flex items-center justify-center p-4 md:p-6">
               <div className="text-center text-white max-w-4xl">
                 <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 text-center leading-tight">
