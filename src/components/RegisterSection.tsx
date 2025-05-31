@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
 const RegisterSection = () => {
@@ -16,7 +15,7 @@ const RegisterSection = () => {
       setEmail('');
     }
   };
-  return <section className="px-6 bg-background py-16 md:py-20 lg:py-24">
+  return <section className="px-6 bg-background py-16 md:py-20 lg:py-[94px]">
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8 md:mb-12">
           <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl text-foreground mb-4 md:mb-6 font-bold">
