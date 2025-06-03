@@ -1,5 +1,5 @@
-
 import { useState, useEffect } from 'react';
+import banner2 from '@/assets/banner2.jpeg';
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -8,7 +8,7 @@ const HeroSection = () => {
     title: "Neosophical AI",
     description: "Discover ancient wisdom through modern technology"
   }, {
-    image: "/lovable-uploads/341cf9a2-3b37-4817-b33c-3e7fdb5589f0.png",
+    image: banner2,
     title: "Your co-pilot for emotional clarity",
     description: "Navigate your spiritual journey with AI-powered insights"
   }];
