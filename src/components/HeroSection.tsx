@@ -5,7 +5,7 @@ const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [{
     image: "/lovable-uploads/8d434cb9-b643-4b30-a21a-404ab5eaa46c.png",
-    title: "Neosophical AI",
+    title: "Neosophical™ AI",
     description: "Discover ancient wisdom through modern technology"
   }, {
     image: banner2,
