@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import banner2 from '@/assets/banner2.jpeg';
 
@@ -6,11 +5,7 @@ const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [{
     image: "/lovable-uploads/8d434cb9-b643-4b30-a21a-404ab5eaa46c.png",
-    title: (
-      <>
-        Neosophical<sup className="text-xs">™</sup> AI
-      </>
-    ),
+    title: "Neosophical™ AI",
     description: "Discover ancient wisdom through modern technology"
   }, {
     image: banner2,
@@ -32,7 +27,7 @@ const HeroSection = () => {
       }}>
         {slides.map((slide, index) => (
           <div key={index} className="min-w-full h-full relative">
-            <img src={slide.image} alt="Hero slide" className="w-full h-full object-cover object-center" />
+            <img src={slide.image} alt={slide.title} className="w-full h-full object-cover object-center" />
             <div className="absolute inset-0 bg-black/20 flex items-center justify-center p-4 md:p-6">
               <div className="text-center max-w-4xl">
                 <h1 className={`font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 text-center leading-tight ${index === 0 ? 'text-white' : 'text-white'}`}>
