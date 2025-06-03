@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import banner2 from '@/assets/banner2.jpeg';
 
@@ -34,7 +33,7 @@ const HeroSection = () => {
                 <h1 className={`font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 text-center leading-tight ${index === 0 ? 'text-white' : 'text-white'}`}>
                   {index === 0 ? (
                     <>
-                      Neosophical<sup className="text-xs">™</sup> AI
+                      Neosophical<sup className="text-[0.4em] align-top leading-none">™</sup> AI
                     </>
                   ) : (
                     slide.title
