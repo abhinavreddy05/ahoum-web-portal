@@ -1,5 +1,6 @@
 
 import { Instagram, Linkedin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const scrollToSection = (sectionId: string) => {
@@ -13,9 +14,9 @@ const Header = () => {
     <header className="w-full bg-background border-b border-foreground/10 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="font-playfair text-2xl font-bold text-foreground">
+        <Link to="/" className="font-playfair text-2xl font-bold text-foreground">
           Ahoum
-        </div>
+        </Link>
 
         {/* Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
@@ -31,18 +32,18 @@ const Header = () => {
           >
             Contact
           </button>
-          <a 
-            href="#" 
+          <Link 
+            to="/terms-conditions" 
             className="font-montserrat text-foreground hover:opacity-70 transition-opacity"
           >
             Terms & Conditions
-          </a>
-          <a 
-            href="#" 
+          </Link>
+          <Link 
+            to="/privacy-policy" 
             className="font-montserrat text-foreground hover:opacity-70 transition-opacity"
           >
             Privacy Policy
-          </a>
+          </Link>
         </nav>
 
         {/* Social Media Icons */}
