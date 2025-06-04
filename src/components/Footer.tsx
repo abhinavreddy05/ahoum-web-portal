@@ -33,7 +33,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-foreground/10 text-center">
           <p className="font-montserrat text-sm text-foreground/60">
-            © 2024 Ahoum. All rights reserved.
+            © 2025 Ahoum. All rights reserved.
           </p>
         </div>
       </div>
